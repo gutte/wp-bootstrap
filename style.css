@@ -1,0 +1,46 @@
+/*
+Theme Name: WP Strap
+Theme URI: http://nettisetti.com/
+Author: Gustav Klingstedt
+Author URI: http://nettisetti.com/
+Description: Simple responsive theme using bootstrap elements.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: 
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+  /*min-height: 2000px;*/
+  padding-top: 70px;
+}
+
+div.jumbotron {
+    background-color: #ff6600;
+    color: white;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 50px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+@media (min-width: 768px) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
