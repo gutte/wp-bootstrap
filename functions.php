@@ -6,7 +6,8 @@ wp_enqueue_style( 'style', get_stylesheet_uri() );
 function register_my_menus() {
     register_nav_menus(
         array(
-            'header-menu' => __( 'Header Menu' )
+            'header-menu' => __( 'Header Menu' ),
+            'right-menu' => __( 'Right Menu' )
         )
     );
 }

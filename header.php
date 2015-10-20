@@ -27,24 +27,31 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img src="img/navbar-logo.png" style="height:30px; margin-top:-6px; float:left;"><?php bloginfo('name'); ?></a>
+              <a class="navbar-brand" href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/navbar-logo.png" style="height:30px; margin-top:-6px; float:left;" alt="<?php bloginfo('name'); ?>"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <?php
                 
                 wp_nav_menu(
                     array(
-                        'menu' => 'main_menu',
+                        'menu' => 'Main Menu',
                         'container' => '',
                         'menu_class' => 'nav navbar-nav',
                         'walker' => new Submenu_Walker_Nav_Menu()
                     )
                 );
                 ?>
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Suomi <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Svenska</a></li>
-              </ul>
+                <?php
+                
+                wp_nav_menu(
+                    array(
+                        'menu' => 'Right Menu',
+                        'container' => '',
+                        'menu_class' => 'nav navbar-nav  navbar-right',
+                        'walker' => new Submenu_Walker_Nav_Menu()
+                    )
+                );
+                ?>
             </div><!--/.nav-collapse -->
           </div>
         </nav>
