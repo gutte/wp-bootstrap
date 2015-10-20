@@ -15,7 +15,9 @@
         <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
         <?php wp_head(); ?>
     </head>
-    <body>
+    <body <?php if (is_user_logged_in()) {body_class( 'isadmin' );} else {body_class();} ?>>
+		
+		
 
         <!-- Fixed navbar -->
         <nav id='topbar' class="navbar navbar-default navbar-fixed-top">

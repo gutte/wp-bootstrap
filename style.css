@@ -18,10 +18,15 @@ body {
   padding-top: 70px;
 }
 
+body.isadmin nav#topbar {
+	margin-top: 32px;
+}
+
 div.jumbotron {
     background-color: #ff6600;
     color: white;
 }
+
 
 
 /* Featurettes
