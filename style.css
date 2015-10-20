@@ -49,3 +49,10 @@ div.jumbotron {
   }
 }
 
+
+/* DROPDOWN MENU
+-------------------------------------------------- */
+
+ul.nav li:hover > ul.dropdown-menu {
+    display: block;    
+}
