@@ -29,7 +29,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/navbar-logo.png" style="height:30px; margin-top:-6px; float:left;" alt="<?php bloginfo('name'); ?>"></a>
+              <a class="navbar-brand" href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/navbar-logo.png" style="height:30px; margin-top:-6px; float:left;" alt="<?php bloginfo('name'); ?>"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <?php
