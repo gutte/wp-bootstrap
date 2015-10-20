@@ -1,4 +1,3 @@
-      <hr class="featurette-divider">
       <!-- Site footer -->
       <footer class="footer">
         <p>&copy; Footer widget here</p>
