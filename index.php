@@ -16,9 +16,11 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
     the_content();
     ?>
 		</div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/img/placeholder.jpg" alt="Generic placeholder image">
-        </div>
+		<?php if (has_post_thumbnail()) {
+			?><div class="col-md-5"><?php 
+				echo the_post_thumbnail('large', array('class' => 'featurette-image img-responsive center-block'));
+			?></div>
+			<?php }?>
       </div>
       <hr class="featurette-divider">
 <?php
