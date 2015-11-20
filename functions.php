@@ -39,4 +39,14 @@ add_action( 'after_setup_theme', 'themename_custom_header_setup' );
 */
 
 
+function query_subpages($pageid) {
+    //$my_wp_query = new WP_Query();
+    //$all_wp_pages = $my_wp_query->query(array('post_type' => 'page'));
+    //$children = get_page_children( $pageid, $all_wp_pages );
+    $children = get_pages( array(
+        'parent' => $pageid
+    ) );
+    return $children;
+}
+
 ?>

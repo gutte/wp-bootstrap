@@ -56,3 +56,11 @@ div.jumbotron {
 ul.nav li:hover > ul.dropdown-menu {
     display: block;    
 }
+
+
+/* FLATVIEW TEMPLATE PAGE MENU
+-------------------------------------------------- */
+
+div.flatview-menu li {
+    list-style-type: none;
+}
